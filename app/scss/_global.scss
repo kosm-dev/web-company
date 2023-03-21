@@ -11,6 +11,14 @@ body {
   background-color: $default-2;
 }
 
+button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+}
+
 .lock {
   overflow: hidden;
 }
@@ -39,6 +47,8 @@ body {
     margin-bottom: 100px;
   }
   &__features {
+  }
+  &__services {
   }
 }
 
@@ -70,6 +80,29 @@ body {
 
 .btn:hover {
   background: #8a74ff;
+}
+
+.link {
+  display: inline-block;
+  padding-right: 30px;
+  position: relative;
+  @extend %montserrat-600;
+  font-size: 16px;
+  line-height: 24px;
+  color: $accent;
+}
+
+.link:after {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  background-image: url(../images/arrow.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 // burger
