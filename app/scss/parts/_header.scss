@@ -8,28 +8,16 @@
   &__logo {
     padding-right: 30px;
   }
-  &__menu {
-  }
   &__links {
     margin-left: 45px;
-  }
-  &__link {
-  }
-}
-
-.logo {
-  &__img {
   }
 }
 .menu {
   display: flex;
   &__list {
     display: flex;
-
     align-items: center;
     gap: 10px 40px;
-  }
-  &__list-item {
   }
   &__list-link {
     position: relative;
