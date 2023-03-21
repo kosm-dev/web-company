@@ -4,6 +4,11 @@ body {
 }
 
 body {
+  @extend %montserrat-400;
+  font-size: 14px;
+  line-height: 21px;
+  color: $default;
+  background-color: $default-2;
 }
 
 .lock {
@@ -33,13 +38,30 @@ body {
 }
 
 .container {
-  max-width: 1180px;
+  max-width: 1330px;
   width: 100%;
   margin: 0 auto;
   padding: 0 15px;
 }
 
 // style
+
+.btn {
+  display: inline-block;
+  min-height: 56px;
+  @extend %montserrat-600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #fff;
+  padding: 16px 40px;
+  background-color: $accent;
+  border-radius: 44px;
+  transition: all .2s;
+}
+
+.btn:hover {
+  background: #8a74ff;
+}
 
 // burger
 .burger {
