@@ -50,6 +50,8 @@ button {
   }
   &__services {
   }
+  &__portfolio {
+  }
 }
 
 .footer {
@@ -83,26 +85,29 @@ button {
 }
 
 .link {
+  position: relative;
   display: inline-block;
   padding-right: 30px;
-  position: relative;
   @extend %montserrat-600;
   font-size: 16px;
   line-height: 24px;
   color: $accent;
-}
-
-.link:after {
-  content: "";
-  position: absolute;
-  width: 24px;
-  height: 24px;
-  top: 50%;
-  right: 0;
-  transform: translateY(-50%);
-  background-image: url(../images/arrow.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
+  &--light {
+    color: #fff;
+    svg {
+      path {
+        fill: #fff;
+      }
+    }
+  }
+  &__icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    width: 24px;
+    height: 24px;
+  }
 }
 
 // burger
