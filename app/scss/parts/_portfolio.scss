@@ -37,6 +37,10 @@
     border-bottom-left-radius: 16px;
     border-bottom-right-radius: 16px;
     padding: 24px 24px 32px;
+    transition: all .2s;
+  }
+  &__wrapper:hover {
+    background: rgba(110, 82, 255, 0.9);
   }
   &__content {
     padding-right: 20px;

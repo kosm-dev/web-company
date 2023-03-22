@@ -18,6 +18,7 @@
   padding: 60px 70px 40px;
   background: #ffffff;
   border-radius: 16px;
+  transition: all .2s;
   &__img {
     width: 278px;
     height: 195px;
@@ -62,4 +63,8 @@
   &__links {
     text-align: center;
   }
+}
+
+.services-card:hover {
+  box-shadow: -1px 13px 18px rgba(186, 186, 186, 0.25);
 }

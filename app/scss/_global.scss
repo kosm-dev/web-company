@@ -92,7 +92,15 @@ button {
   font-size: 16px;
   line-height: 24px;
   color: $accent;
-  &--light {
+  transition: all 0.2s;
+  &:hover {
+    color: #8a74ff;
+    path {
+      fill: #8a74ff;
+    }
+  }
+  &--light,
+  &--light:hover {
     color: #fff;
     svg {
       path {
@@ -107,6 +115,25 @@ button {
     right: 0;
     width: 24px;
     height: 24px;
+  }
+}
+
+// socials
+
+.socials {
+  display: flex;
+  gap: 12px;
+  &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #acacac;
+    border-radius: 6px;
+    padding: 6px;
+  }
+  &__icon {
+    width: 20px;
+    height: 20px;
   }
 }
 
