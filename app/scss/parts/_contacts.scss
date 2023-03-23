@@ -1,0 +1,82 @@
+.contacts {
+  padding: 100px 0;
+  &__inner {
+    display: flex;
+    background: $gray-2;
+    border-radius: 16px;
+  }
+  &__content {
+    padding: 130px 85px;
+    width: 100%;
+    max-width: 522px;
+    background-color: $accent;
+    border-top-left-radius: 16px;
+    border-bottom-left-radius: 16px;
+    text-align: center;
+  }
+  &__title {
+    margin-bottom: 16px;
+    @extend %montserrat-700;
+    font-size: 36px;
+    line-height: 43px;
+    color: #ffffff;
+  }
+  &__descr {
+    @extend %montserrat-500;
+    font-size: 16px;
+    line-height: 24px;
+    color: $default-2;
+    margin-bottom: 42px;
+  }
+  &__img {
+    display: flex;
+    justify-content: center;
+  }
+  &__form {
+  }
+  &__form-box {
+  }
+  &__form-label {
+  }
+  &__form-suptitle {
+  }
+  &__form-btns {
+  }
+  &__form-btn {
+  }
+}
+.form-feedback {
+  max-width: 626px;
+  width: 100%;
+  padding: 60px 70px;
+  &__wrapper {
+  }
+  &__label {
+    display: block;
+    margin-bottom: 20px;
+  }
+  &__suptitle {
+    @extend %montserrat-600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #504f4f;
+  }
+  &__input {
+    width: 100%;
+    height: 53px;
+    padding: 16px 24px;
+    border: none;
+    border-radius: 12px;
+    background-color: #ffffff;
+  }
+  &__input::placeholder {
+    @extend %montserrat-500;
+    font-size: 14px;
+    line-height: 21px;
+    color: #acacac;
+  }
+  &__btns {
+  }
+  &__btn {
+  }
+}
