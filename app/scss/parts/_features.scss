@@ -12,6 +12,7 @@
     display: flex;
     flex-wrap: wrap;
     gap: 24px;
+    justify-content: center;
   }
 }
 .features-item {
@@ -44,5 +45,32 @@
     font-size: 14px;
     line-height: 21px;
     color: $gray;
+  }
+}
+
+@media (max-width: 1000px) {
+  .features__items {
+    gap: 15px;
+  }
+  .features-item {
+    padding: 25px;
+    max-width: 380px;
+  }
+}
+
+@media (max-width: 576px) {
+
+  .features__inner {
+    padding: 40px 0;
+  }
+  .features__title {
+    margin-bottom: 24px;
+  }
+  .features-item {
+    padding: 20px;
+  }
+  .features-item__title {
+    font-size: 16px;
+    line-height: 19px;
   }
 }

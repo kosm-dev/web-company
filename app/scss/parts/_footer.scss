@@ -4,10 +4,12 @@
   &__inner {
     display: flex;
     justify-content: space-between;
-    gap: 0 30px;
+    gap: 30px 30px;
     margin-bottom: 40px;
+    flex-wrap: wrap;
   }
   &__logo {
+    display: inline-block;
     margin-bottom: 18px;
   }
   &__menu-title {
@@ -74,5 +76,29 @@
   }
   &__icon {
     padding-left: 3px;
+  }
+}
+
+@media (max-width: 950px) {
+  .footer-info {
+    max-width: none;
+  }
+}
+
+@media (max-width: 576px) {
+  .footer {
+    padding-top: 40px;
+  }
+
+  .footer-info__descr {
+    margin-bottom: 24px;
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  .footer__menu-title {
+    margin-bottom: 16px;
+    font-size: 16px;
+    line-height: 20px;
   }
 }

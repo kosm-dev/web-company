@@ -28,3 +28,48 @@
     max-width: 635px;
   }
 }
+
+@media (max-width: 1200px) {
+  .top__title {
+    font-size: 40px;
+    line-height: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .top__content {
+    padding-top: 0;
+  }
+  .top__title {
+    font-size: 30px;
+    line-height: 40px;
+  }
+}
+
+@media (max-width: 600px) {
+  .top__inner {
+    flex-direction: column;
+  }
+  .top__content {
+    margin-bottom: 40px;
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .main__top {
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+
+  .top__title {
+    margin-bottom: 12px;
+    font-size: 26px;
+    line-height: 31px;
+  }
+  .top__text {
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 24px;
+}
+}

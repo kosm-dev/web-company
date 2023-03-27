@@ -3,7 +3,12 @@ body {
   height: 100%;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
+  position: relative;
   @extend %montserrat-400;
   font-size: 14px;
   line-height: 21px;
@@ -43,7 +48,7 @@ button {
 
 .main {
   &__top {
-    margin-top: 60px;
+    margin-top: 160px;
     margin-bottom: 100px;
   }
   &__features {
@@ -120,9 +125,33 @@ button {
   }
 }
 
+@media (max-width: 576px) {
+  .link {
+    font-size: 14px;
+    line-height: 21px;
+  }
+}
+
 // socials
 
 .socials {
+  display: flex;
+  gap: 12px;
+  &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #acacac;
+    border-radius: 6px;
+    padding: 6px;
+  }
+  &__icon {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.socials-mobile {
   display: flex;
   gap: 12px;
   &__link {
@@ -151,7 +180,7 @@ button {
 .burger::before,
 .burger::after {
   content: "";
-  background: linear-gradient(90deg, #ec656d 0%, #ef914f 100%);
+  background-color: #000;
   position: absolute;
   width: 100%;
   height: 2px;
@@ -168,7 +197,7 @@ button {
 .burger span {
   display: block;
   position: absolute;
-  background: linear-gradient(90deg, #ec656d 0%, #ef914f 100%);
+  background-color: #000;
   top: 9px;
   left: 0;
   width: 100%;
@@ -192,4 +221,49 @@ button {
   font-size: 36px;
   line-height: 43px;
   color: $default;
+}
+@media (max-width: 576px) {
+  .title {
+    font-size: 24px;
+    line-height: 29px;
+  }
+}
+
+// ontop
+
+.ontop {
+  position: fixed;
+  right: 28px;
+  bottom: 40px;
+  z-index: 999;
+  &__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $gray;
+    padding: 10px;
+    border-radius: 16px;
+    transition: all 0.2s;
+    opacity: 1;
+    transform: translateX(0);
+    transition: all 0.2s;
+  }
+  &__btn-hide {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(100%);
+    transition: all 0.2s;
+  }
+  &__btn:hover {
+    background: #acacac;
+  }
+}
+
+@media (max-width: 576px) {
+  .btn {
+    min-height: 45px;
+    padding: 12px 32px;
+    font-size: 14px;
+    line-height: 21px;
+  }
 }
