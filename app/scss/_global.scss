@@ -8,6 +8,7 @@ html {
 }
 
 body {
+  min-width: 320px;
   position: relative;
   @extend %montserrat-400;
   font-size: 14px;

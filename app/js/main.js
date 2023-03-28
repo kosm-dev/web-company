@@ -49,7 +49,7 @@ document.addEventListener("DOMContentLoaded", () => {
       onTop.classList.add('ontop__btn-hide');
       header.classList.remove('header--scroll');
     }
-    
+
   }
 
   onTop.addEventListener("click", () => {
@@ -72,7 +72,23 @@ document.addEventListener("DOMContentLoaded", () => {
     socialsMobile.classList.toggle('socials-mobile--active');
   });
 
+  // button socialmedia
+  const socialmediaBtnOpen = document.querySelector('.sociamedia__btn-open'),
+    socialmediaBtnClose = document.querySelector('.sociamedia__btn-close'),
+    sociamediaList = document.querySelector('.sociamedia__list');
 
+  socialmediaBtnOpen.addEventListener('click', () => {
+    sociamediaList.classList.add('active');
+    socialmediaBtnOpen.classList.add('active');
+    socialmediaBtnClose.classList.add('active');
+  });
+
+  socialmediaBtnClose.addEventListener('click', () => {
+
+    sociamediaList.classList.remove('active');
+    socialmediaBtnOpen.classList.remove('active');
+    socialmediaBtnClose.classList.remove('active');
+  });
 
 
 
