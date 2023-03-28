@@ -16,14 +16,6 @@ body {
   background-color: $default-2;
 }
 
-button {
-  border: none;
-  background-color: transparent;
-  cursor: pointer;
-  padding: 0;
-  margin: 0;
-}
-
 .lock {
   overflow: hidden;
 }
@@ -51,8 +43,6 @@ button {
     margin-top: 160px;
     margin-bottom: 100px;
   }
-  &__features {
-  }
   &__services {
   }
   &__portfolio {
@@ -72,150 +62,6 @@ button {
   padding: 0 15px;
 }
 
-// style
-
-.btn {
-  display: inline-block;
-  min-height: 56px;
-  @extend %montserrat-600;
-  font-size: 16px;
-  line-height: 24px;
-  color: #fff;
-  padding: 16px 40px;
-  background-color: $accent;
-  border-radius: 44px;
-  transition: all 0.2s;
-}
-
-.btn:hover {
-  background: #8a74ff;
-}
-
-.link {
-  position: relative;
-  display: inline-block;
-  padding-right: 30px;
-  @extend %montserrat-600;
-  font-size: 16px;
-  line-height: 24px;
-  color: $accent;
-  transition: all 0.2s;
-  &:hover {
-    color: #8a74ff;
-    path {
-      fill: #8a74ff;
-    }
-  }
-  &--light,
-  &--light:hover {
-    color: #fff;
-    svg {
-      path {
-        fill: #fff;
-      }
-    }
-  }
-  &__icon {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    right: 0;
-    width: 24px;
-    height: 24px;
-  }
-}
-
-@media (max-width: 576px) {
-  .link {
-    font-size: 14px;
-    line-height: 21px;
-  }
-}
-
-// socials
-
-.socials {
-  display: flex;
-  gap: 12px;
-  &__link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #acacac;
-    border-radius: 6px;
-    padding: 6px;
-  }
-  &__icon {
-    width: 20px;
-    height: 20px;
-  }
-}
-
-.socials-mobile {
-  display: flex;
-  gap: 12px;
-  &__link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #acacac;
-    border-radius: 6px;
-    padding: 6px;
-  }
-  &__icon {
-    width: 20px;
-    height: 20px;
-  }
-}
-
-// burger
-.burger {
-  position: relative;
-  display: none;
-  width: 30px;
-  height: 20px;
-  cursor: pointer;
-  // z-index: 11;
-}
-.burger::before,
-.burger::after {
-  content: "";
-  background-color: #000;
-  position: absolute;
-  width: 100%;
-  height: 2px;
-  left: 0;
-  transition: all 0.3s;
-}
-.burger::before {
-  top: 0;
-}
-.burger::after {
-  bottom: 0;
-}
-
-.burger span {
-  display: block;
-  position: absolute;
-  background-color: #000;
-  top: 9px;
-  left: 0;
-  width: 100%;
-  height: 2px;
-  transition: all 0.3s;
-}
-.burger--active::before {
-  transform: rotate(45deg);
-  top: 9px;
-}
-.burger--active::after {
-  transform: rotate(-45deg);
-  bottom: 9px;
-}
-.burger--active span {
-  transform: scale(0);
-}
-
 .title {
   @extend %montserrat-700;
   font-size: 36px;
@@ -226,44 +72,5 @@ button {
   .title {
     font-size: 24px;
     line-height: 29px;
-  }
-}
-
-// ontop
-
-.ontop {
-  position: fixed;
-  right: 28px;
-  bottom: 40px;
-  z-index: 999;
-  &__btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: $gray;
-    padding: 10px;
-    border-radius: 16px;
-    transition: all 0.2s;
-    opacity: 1;
-    transform: translateX(0);
-    transition: all 0.2s;
-  }
-  &__btn-hide {
-    opacity: 0;
-    visibility: hidden;
-    transform: translateX(100%);
-    transition: all 0.2s;
-  }
-  &__btn:hover {
-    background: #acacac;
-  }
-}
-
-@media (max-width: 576px) {
-  .btn {
-    min-height: 45px;
-    padding: 12px 32px;
-    font-size: 14px;
-    line-height: 21px;
   }
 }

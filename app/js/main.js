@@ -1,6 +1,7 @@
 "use strict";
 document.addEventListener("DOMContentLoaded", () => {
 
+
   // dropdowns
   const dropdowns = document.querySelectorAll('.dropdown');
   dropdowns.forEach(dropdown => {
@@ -34,14 +35,21 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // button ontop
 
-  const onTop = document.querySelector(".ontop__btn");
+  const onTop = document.querySelector(".ontop__btn"),
+    header = document.querySelector(".header");
 
   window.onscroll = () => {
     if (window.scrollY > 700) {
       onTop.classList.remove('ontop__btn-hide');
-    } else if (window.scrollY < 700) {
-      onTop.classList.add('ontop__btn-hide');
     }
+    if (window.scrollY > 0) {
+      header.classList.add('header--scroll');
+    }
+    else if (window.scrollY < 700) {
+      onTop.classList.add('ontop__btn-hide');
+      header.classList.remove('header--scroll');
+    }
+    
   }
 
   onTop.addEventListener("click", () => {
@@ -63,6 +71,12 @@ document.addEventListener("DOMContentLoaded", () => {
     langMobile.classList.toggle('language-mobile--active');
     socialsMobile.classList.toggle('socials-mobile--active');
   });
+
+
+
+
+
+
 
 
 

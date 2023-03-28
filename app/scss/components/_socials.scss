@@ -1,0 +1,46 @@
+// socials
+
+.socials {
+  display: flex;
+  gap: 12px;
+  &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #acacac;
+    border-radius: 6px;
+    padding: 6px;
+  }
+  &__icon {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.socials-mobile {
+  display: none;
+  gap: 0 12px;
+  &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #e9e9e9;
+    border-radius: 6px;
+    padding: 6px;
+  }
+  &__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+  }
+}
+
+ul.socials-mobile {
+  margin-top: 12px;
+}
+
+.socials-mobile--active {
+  display: flex;
+}

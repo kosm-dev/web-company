@@ -3,6 +3,11 @@
 @import "reset";
 @import "libs";
 @import "global";
+
+@import "components/buttons";
+@import "components/socials";
+@import "components/selects";
+
 @import "parts/header";
 @import "parts/top";
 @import "parts/features";
@@ -10,4 +15,3 @@
 @import "parts/portfolio";
 @import "parts/contacts";
 @import "parts/footer";
-
