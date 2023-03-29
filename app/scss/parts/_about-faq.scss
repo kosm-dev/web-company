@@ -1,0 +1,17 @@
+.about-faq {
+  &__inner {
+    padding-top: 50px;
+    padding-bottom: 100px;
+  }
+  &__title {
+    margin-bottom: 48px;
+    text-align: center;
+  }
+}
+.about-faq__item{
+  margin-bottom: 16px;
+}
+.about-faq__item:last-child {
+  margin-bottom: 0;
+}
+

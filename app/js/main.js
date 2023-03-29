@@ -90,6 +90,31 @@ document.addEventListener("DOMContentLoaded", () => {
     socialmediaBtnClose.classList.remove('active');
   });
 
+  // spoiler
+
+  const spoilerContent = document.querySelectorAll(".spoiler__content");
+
+  spoilerContent.forEach((item) => {
+    let spoilerHead = item.querySelector(".spoiler__head");
+    spoilerHead.addEventListener("click", () => {
+      item.classList.toggle("open");
+
+      let spoilerArrow = item.querySelector(".spoiler__icon"),
+        spoilerDescr = item.querySelector(".spoiler__descr");
+
+      spoilerArrow.classList.toggle("open");
+
+      if (item.classList.contains("open")) {
+        spoilerDescr.style.height = `${spoilerDescr.scrollHeight}px`;
+        spoilerDescr.classList.add('active');
+      } else {
+        spoilerDescr.style.height = "0px"
+        spoilerDescr.classList.remove('active');
+      }
+    });
+
+  });
+
 
 
 
