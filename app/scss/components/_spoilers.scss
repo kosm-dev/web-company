@@ -1,34 +1,51 @@
-.spoiler {
-  width: 100%;
-}
-.spoiler__content {
-  overflow: hidden;
-}
-.spoiler__head {
-  padding: 16px 0;
-  display: flex;
-  justify-content: space-between;
-  cursor: pointer;
-  border-bottom: 1px solid #acacac;
-}
-.spoiler__title {
-  @extend %montserrat-600;
-  padding-right: 30px;
-  font-size: 20px;
-  line-height: 24px;
-  color: #504f4f;
-}
-.spoiler__icon {
-  transition: transform 0.2s;
-}
-.spoiler__descr {
-  height: 0;
-  transition: all 0.2s;
-}
-.spoiler__descr.active {
-  margin-top: 24px;
+.about-faq__items {
+  .spoiler {
+    width: 100%;
+  }
+  .spoiler__content {
+    overflow: hidden;
+  }
+  .spoiler__head {
+    padding: 16px 0;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    border-bottom: 1px solid #acacac;
+  }
+  .spoiler__title {
+    @extend %montserrat-600;
+    padding-right: 30px;
+    font-size: 20px;
+    line-height: 24px;
+    color: #504f4f;
+  }
+  .spoiler__icon {
+    transition: transform 0.2s;
+    width: 24px;
+    height: 24px;
+  }
+  .spoiler__descr {
+    height: 0;
+    transition: all 0.2s;
+  }
+  .spoiler__descr.active {
+    margin-top: 24px;
+  }
+
+  .spoiler__icon.open {
+    transform: rotate(180deg);
+  }
 }
 
-.spoiler__icon.open {
-  transform: rotate(180deg);
+@media (max-width: 576px) {
+  .about-faq__items {
+    .spoiler__title {
+      padding-right: 56px;
+      font-size: 16px;
+      line-height: 19px;
+    }
+    .spoiler__head {
+      align-items: center;
+    }
+  }
 }
