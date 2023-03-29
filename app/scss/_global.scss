@@ -15,6 +15,7 @@ body {
   line-height: 21px;
   color: $default;
   background-color: $default-2;
+  overflow-x: hidden;
 }
 
 .lock {
@@ -44,11 +45,9 @@ body {
     margin-top: 160px;
     margin-bottom: 100px;
   }
-  &__services {
-  }
-  &__portfolio {
-  }
-  &__contacts {
+  &__about {
+    margin-top: 220px;
+    margin-bottom: 50px;
   }
 }
 

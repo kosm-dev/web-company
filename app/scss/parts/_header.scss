@@ -5,6 +5,7 @@
   left: 0;
   z-index: 999;
   transition: all 0.2s;
+  background-color: $default-2;
   &__inner {
     display: flex;
     align-items: center;
@@ -97,19 +98,16 @@
   }
   .header__menu {
     flex-direction: column;
+    align-items: center;
     position: fixed;
     top: -100%;
     left: 0;
     width: 100%;
     height: 100%;
     background-color: #fff;
-    padding-top: 170px;
-    padding-bottom: 30px;
+    padding: 170px 10px 30px;
     transition: all 0.6s;
     overflow: auto;
-    padding-left: 10px;
-    padding-right: 10px;
-    align-items: flex-start;
   }
   .header__menu--active {
     top: 0;
@@ -123,6 +121,7 @@
     font-size: 16px;
     line-height: 24px;
     padding: 8px 0;
+    text-align: center;
   }
   .menu__list-link:after {
     display: none;
@@ -148,6 +147,13 @@
 @media (max-width: 576px) {
   .header {
     padding: 12px 0;
+  }
+
+  .header__link {
+    min-height: 35px;
+    padding: 10px 20px;
+    font-size: 10px;
+    line-height: 15px;
   }
 
   .header__logo {

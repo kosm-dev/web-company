@@ -12,16 +12,13 @@
 <body>
 
   <div class="wrapper">
+
     <header class="header">
       <div class="container">
         <div class="header__inner">
           <a class="header__logo logo" href="#">
             <img class="logo__img" src="images/logo.svg" alt="logo">
           </a>
-
-          <!-- <div class="burger">
-            <span></span>
-          </div> -->
           <nav class="header__menu menu">
             <ul class="menu__list">
               <li class="menu__list-item">
@@ -58,6 +55,39 @@
               </li>
             </ul>
 
+            <ul class="socials-mobile">
+              <li class="socials-mobile__item">
+                <a class="socials-mobile__link" href="#">
+                  <div class="socials-mobile__icon">
+                    <img src="images/socials/telegram-mobile.svg" alt="">
+                  </div>
+
+                </a>
+              </li>
+              <li class="socials-mobile__item">
+                <a class="socials-mobile__link" href="#">
+                  <div class="socials-mobile__icon">
+                    <img src="images/socials/instagram-mobile.svg" alt="">
+                  </div>
+                </a>
+              </li>
+              <li class="socials-mobile__item">
+                <a class="socials-mobile__link" href="#">
+                  <div class="socials-mobile__icon">
+                    <img src="images/socials/facebook-mobile.svg" alt="">
+                  </div>
+                </a>
+              </li>
+              <li class="socials-mobile__item">
+                <a class="socials-mobile__link" href="#">
+                  <div class="socials-mobile__icon">
+                    <img src="images/socials/linkedin-mobile.svg" alt="">
+                  </div>
+
+                </a>
+              </li>
+            </ul>
+
             <div class="header__language language-box">
               <div class="dropdown">
                 <div class="select">
@@ -68,7 +98,6 @@
                         d="M7.00003 9.33333C6.92326 9.33378 6.84715 9.31906 6.77608 9.29003C6.70501 9.261 6.64037 9.21823 6.58586 9.16417L3.08586 5.66417C2.97602 5.55432 2.91431 5.40534 2.91431 5.25C2.91431 5.09466 2.97602 4.94568 3.08586 4.83583C3.1957 4.72599 3.34468 4.66428 3.50003 4.66428C3.65537 4.66428 3.80435 4.72599 3.91419 4.83583L7.00003 7.9275L10.0859 4.84167C10.1975 4.7461 10.341 4.69616 10.4878 4.70184C10.6346 4.70751 10.7739 4.76837 10.8778 4.87226C10.9817 4.97614 11.0425 5.11541 11.0482 5.26222C11.0539 5.40903 11.0039 5.55257 10.9084 5.66417L7.40836 9.16417C7.29971 9.27193 7.15306 9.33269 7.00003 9.33333Z"
                         fill="#504F4F" />
                     </svg>
-
                   </div>
                 </div>
                 <ul class="menu">
@@ -77,16 +106,28 @@
                 </ul>
               </div>
             </div>
-
-            <div class="header__links">
-              <a class="header__link btn" href="#">
-                Зв’язатися з нами
-              </a>
-            </div>
           </nav>
 
+          <div class="burger">
+            <span></span>
+          </div>
+          <div class="header__links">
+            <a class="header__link btn" href="#">
+              Зв’язатися з нами
+            </a>
+          </div>
 
+        </div>
 
+        <div class="language-mobile">
+          <div class="language-mobile__list">
+            <a class="language-mobile__link language-mobile__link--active" href="#">
+              ua
+            </a>
+            <a class="language-mobile__link" href="#">
+              en
+            </a>
+          </div>
         </div>
       </div>
 
@@ -95,11 +136,157 @@
 
     <main class="main">
 
+      <div class="ontop">
+        <button class="ontop__btn ontop__btn-hide">
+          <img src="images/ontop.svg" alt="ontop">
+        </button>
+      </div>
+
+      <div class="sociamedia">
+        <div class="sociamedia__head">
+          <button class="sociamedia__btn-open">
+            <img src="images/feedback.svg" alt="">
+          </button>
+          <button class="sociamedia__btn-close">
+            <img src="images/close.svg" alt="">
+          </button>
+        </div>
+
+        <ul class="sociamedia__list">
+          <li class="sociamedia__list-item">
+            <a class="sociamedia__list-link" href="#">
+              <img src="images/socials/media-1.svg" alt="media">
+            </a>
+          </li>
+
+          <li class="sociamedia__list-item">
+            <a class="sociamedia__list-link" href="#">
+              <img src="images/socials/media-2.svg" alt="media">
+            </a>
+          </li>
+
+          <li class="sociamedia__list-item">
+            <a class="sociamedia__list-link" href="#">
+              <img src="images/socials/media-3.svg" alt="media">
+            </a>
+          </li>
+
+          <li class="sociamedia__list-item">
+            <a class="sociamedia__list-link" href="#">
+              <img src="images/socials/media-4.svg" alt="media">
+            </a>
+          </li>
+        </ul>
+
+      </div>
 
 
-      <section class="main__top top">
+      <section class="main__about about">
         <div class="container">
-          <div class="top__inner">
+          <div class="about__inner">
+            <div class="about__content">
+              <h1 class="about__title title">
+                Про нас
+              </h1>
+              <div class="about__descr">
+                <p>
+                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                  industry's standard
+                  dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
+                  make a type specimen
+                  book. It has survived not only five centuries, but also the leap into electronic typesetting,
+                  remaining essentially
+                  unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum
+                  passages, and more
+                  recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                  1500s, when an unknown
+                  printer took a galley of type and scrambled it to make a type specimen book. It has survived not only
+                  five centuries.
+                </p>
+              </div>
+            </div>
+
+            <div class="about__img">
+              <div class="about__img-wrapper">
+                <img src="" alt="">
+
+              </div>
+            </div>
+          </div>
+
+          <div class="about-features">
+            <div class="about-features__items">
+
+              <dl class="about-features__list">
+                <div class="about-features__item">
+                  <dt class="about-features__num">
+                    12+
+                  </dt>
+                  <dd class="about-features__descr">
+                    Lorem Ipsum is simply dummy text of the printing and
+                  </dd>
+                </div>
+
+                <div class="about-features__item">
+                  <dt class="about-features__num">
+                    120+
+                  </dt>
+                  <dd class="about-features__descr">
+                    Lorem Ipsum is simply dummy text of the printing and
+                  </dd>
+                </div>
+
+                <div class="about-features__item">
+                  <dt class="about-features__num">
+                    460+
+                  </dt>
+                  <dd class="about-features__descr">
+                    Lorem Ipsum is simply dummy text of the printing and
+                  </dd>
+                </div>
+
+                <div class="about-features__item">
+                  <dt class="about-features__num">
+                    2400+
+                  </dt>
+                  <dd class="about-features__descr">
+                    Lorem Ipsum is simply dummy text of the printing and
+                  </dd>
+                </div>
+              </dl>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="main__about-faq about-faq">
+        <div class="container">
+          <div class="about-faq__inner">
+            <h1 class="about-faq__title">
+              Поширені запитання
+            </h1>
+
+            <div class="about-faq__items">
+              <div class="about-faq__item faq-spoiler">
+                <div class="faq-spoiler__title">
+                  Lorem Ipsum is simply dummy text of the printing ?
+                </div>
+                <div class="faq-spoiler__text">
+                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                  industry's standard
+                  dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
+                  make a type specimen
+                  book. It has survived not only five centuries, but also the leap into electronic typesetting,
+                  remaining essentially
+                  unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum
+                  passages, and more
+                  recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                  1500s, when an unknown
+                  printer took a galley of type and scrambled it to make a type specimen book. It has survived not only
+                  five centuries.
+                </div>
+              </div>
+            </div>
 
           </div>
         </div>
