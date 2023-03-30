@@ -72,6 +72,18 @@ button {
   }
 }
 
+.link-more {
+  @extend %montserrat-600;
+  font-size: 16px;
+  line-height: 24px;
+  text-decoration: underline;
+  color: $accent;
+  transition: all 0.2s;
+}
+.link-more:hover {
+  color: $accent-2;
+}
+
 // burger
 
 // burger

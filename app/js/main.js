@@ -91,7 +91,6 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   // spoiler
-
   const spoilerContent = document.querySelectorAll(".spoiler__content");
 
   spoilerContent.forEach((item) => {
@@ -116,7 +115,75 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
 
+  // filter
 
+  const filterList = document.querySelector('.filter-list'),
+    items = document.querySelectorAll('.filter-list__block'),
+    filterListItems = document.querySelectorAll('.filter-list__item');
+
+  let timerId;
+
+  function filter() {
+
+    filterList.addEventListener('click', (event) => {
+      const targetId = event.target.dataset.id;
+
+      const target = event.target;
+
+      if (target.classList.contains('filter-list__item')) {
+        filterListItems.forEach(listItem => {
+          listItem.classList.remove('active');
+
+        });
+      }
+      target.classList.add('active');
+
+
+
+
+
+
+      switch (targetId) {
+        case 'all':
+          getItems('filter-list__block');
+          break
+        case 'shop':
+          getItems(targetId);
+          break
+
+        case 'landing':
+          getItems(targetId);
+          break
+
+        case 'business':
+          getItems(targetId);
+          break
+
+        case 'design':
+          getItems(targetId);
+          break
+        case 'other':
+          getItems(targetId);
+          break
+      }
+    });
+  }
+
+  filter();
+
+  function getItems(className) {
+
+    items.forEach(item => {
+
+      if (item.classList.contains(className)) {
+        item.style.display = 'flex';
+      } else {
+        item.style.display = 'none';
+      }
+
+
+    })
+  }
 
 
 
