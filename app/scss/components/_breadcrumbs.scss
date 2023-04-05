@@ -1,0 +1,30 @@
+.breadcrumbs {
+  padding-top: 150px;
+  &__list {
+    display: flex;
+    gap: 0 8px;
+  }
+  &__item {
+    position: relative;
+    padding-right: 10px;
+    color: #504f4f;
+    &::after {
+      content: "/";
+      position: absolute;
+      right: 0;
+      color: #504f4f;
+    }
+    &:last-child {
+      padding-right: 0;
+      color: #acacac;
+      &::after {
+        display: none;
+      }
+    }
+  }
+  &__link {
+    @extend %montserrat-600;
+    font-size: 14px;
+    line-height: 21px;
+  }
+}
