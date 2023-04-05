@@ -1,5 +1,5 @@
 .portfolio-main {
-  &__Stitle {
+  &__title {
     margin-bottom: 32px;
     text-align: center;
   }
@@ -9,8 +9,8 @@
   &__items {
     margin-bottom: 60px;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 24px;
   }
@@ -25,5 +25,18 @@
   }
 }
 
-
-
+@media (max-width: 768px) {
+  .portfolio-main__items {
+    gap: 12px;
+  }
+  .portfolio-main ul.portfolio-main__list {
+    margin-bottom: 10px;
+  }
+  .portfolio-main__items {
+    margin-bottom: 24px;
+  }
+  .portfolio-main__links {
+    margin-bottom: 18px;
+    
+  }
+}

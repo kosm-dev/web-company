@@ -83,6 +83,12 @@ button {
 .link-more:hover {
   color: $accent-2;
 }
+@media (max-width: 576px) {
+  .link-more {
+    font-size: 14px;
+    line-height: 21px;
+  }
+}
 
 // burger
 
@@ -229,7 +235,6 @@ button {
     max-height: 410px;
     padding-bottom: 44px;
   }
- 
 }
 
 @media (max-width: 576px) {

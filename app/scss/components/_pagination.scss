@@ -9,7 +9,7 @@
     align-items: center;
     background-color: #e6e4ea;
     border-radius: 4px;
-    transition: all .2s;
+    transition: all 0.2s;
   }
   &__arrows:hover {
     background-color: $accent;
@@ -45,5 +45,27 @@
   &__link--active {
     background-color: $accent;
     color: #ffffff;
+  }
+}
+
+@media (max-width: 576px) {
+  .pagination .pagination__list {
+    margin: 0 30px;
+    gap: 0 6px;
+  }
+  .pagination__link {
+    width: 24px;
+    height: 24px;
+    font-size: 14px;
+    line-height: 21px;
+    padding: 4px 9px;
+   
+  }
+  .pagination__arrows {
+    padding: 4px;
+  }
+  .pagination__arrows svg {
+    width: 16px;
+    height: 16px;
   }
 }
