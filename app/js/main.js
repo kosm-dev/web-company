@@ -2,6 +2,7 @@
 document.addEventListener("DOMContentLoaded", () => {
 
 
+
   // dropdowns
   const dropdowns = document.querySelectorAll('.dropdown');
   dropdowns.forEach(dropdown => {
@@ -16,7 +17,6 @@ document.addEventListener("DOMContentLoaded", () => {
       caret.classList.toggle('caret-rotate');
       menu.classList.toggle('menu-open');
     });
-
     options.forEach(option => {
       option.addEventListener('click', () => {
         selected.innerText = option.innerText;
@@ -50,7 +50,7 @@ document.addEventListener("DOMContentLoaded", () => {
       header.classList.remove('header--scroll');
     }
 
-  }
+  };
 
   onTop.addEventListener("click", () => {
     window.scrollTo(0, 0);
@@ -107,7 +107,7 @@ document.addEventListener("DOMContentLoaded", () => {
         spoilerDescr.style.height = `${spoilerDescr.scrollHeight}px`;
         spoilerDescr.classList.add('active');
       } else {
-        spoilerDescr.style.height = "0px"
+        spoilerDescr.style.height = "0px";
         spoilerDescr.classList.remove('active');
       }
     });
@@ -115,13 +115,55 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
 
+
+
+
+  // tabs
+
+  const tabs = document.querySelectorAll('.tabs__head-item'),
+    tabsContent = document.querySelectorAll('.tabs__content-item'),
+    tabsParent = document.querySelector('.tabs__head');
+  // Нужно скрыть все ненужные нам табы
+  function hideTabContent() {
+    tabsContent.forEach(item => {
+      item.classList.add('hide');
+      item.classList.remove('show');
+    });
+
+    tabs.forEach(tab => {
+      tab.classList.remove('tabs__head-item--active');
+    });
+  }
+
+  function showTabContent(i = 0) {
+    tabsContent[i].classList.add('show', 'fade');
+    tabsContent[i].classList.remove('hide');
+    tabs[i].classList.add('tabs__head-item--active');
+  }
+
+  hideTabContent();
+  showTabContent();
+
+  tabsParent.addEventListener('click', (event) => {
+    const target = event.target;
+
+    if (target && target.classList.contains('tabs__head-item')) {
+      tabs.forEach((item, i) => {
+        if (target == item) {
+          hideTabContent();
+          showTabContent(i);
+        }
+      });
+    }
+  });
+
+
+
   // filter
 
   const filterList = document.querySelector('.filter-list'),
     items = document.querySelectorAll('.filter-list__block'),
     filterListItems = document.querySelectorAll('.filter-list__item');
-
-  let timerId;
 
   function filter() {
 
@@ -138,33 +180,28 @@ document.addEventListener("DOMContentLoaded", () => {
       }
       target.classList.add('active');
 
-
-
-
-
-
       switch (targetId) {
         case 'all':
           getItems('filter-list__block');
-          break
+          break;
         case 'shop':
           getItems(targetId);
-          break
+          break;
 
         case 'landing':
           getItems(targetId);
-          break
+          break;
 
         case 'business':
           getItems(targetId);
-          break
+          break;
 
         case 'design':
           getItems(targetId);
-          break
+          break;
         case 'other':
           getItems(targetId);
-          break
+          break;
       }
     });
   }
@@ -172,19 +209,14 @@ document.addEventListener("DOMContentLoaded", () => {
   filter();
 
   function getItems(className) {
-
     items.forEach(item => {
-
       if (item.classList.contains(className)) {
         item.style.display = 'flex';
       } else {
         item.style.display = 'none';
       }
-
-
-    })
+    });
   }
-
 
 
 

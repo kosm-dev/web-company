@@ -1,0 +1,117 @@
+.services-one {
+  &__portfolio {
+    background-color: #fff;
+  }
+  &__breadcrumbs {
+    margin-bottom: 51px;
+  }
+  &__top {
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: space-between;
+    gap: 0 30px;
+  }
+  &__content {
+    padding-top: 45px;
+    width: 100%;
+    max-width: 590px;
+  }
+  &__title {
+    margin-bottom: 20px;
+    @extend %montserrat-700;
+    font-size: 48px;
+    line-height: 58px;
+  }
+  &__descr {
+    margin-bottom: 32px;
+    @extend %montserrat-500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #504f4f;
+  }
+  &__img {
+    border: 6px solid #000000;
+    border-radius: 16px;
+    width: 100%;
+    max-width: 594px;
+    height: 410px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  &__info {
+    background-color: $gray-2;
+  }
+  &__tabs-title {
+    margin-bottom: 20px;
+
+    @extend %montserrat-600;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+  }
+  &__tabs-text {
+    @extend %montserrat-500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #504f4f;
+  }
+  &__tabs-text p:not(:last-child) {
+    margin-bottom: 16px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .services-one__img {
+    max-width: 400px;
+    height: 350px;
+  }
+  .services-one__title {
+    font-size: 35px;
+    line-height: 45px;
+  }
+  .services-one__descr {
+    margin-bottom: 20px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  .services-one__breadcrumbs {
+    margin-bottom: 37px;
+  }
+  .services-one__top {
+    margin-bottom: 60px;
+  }
+  .services-one__img {
+    max-width: 300px;
+    height: 250px;
+  }
+  .services-one__content {
+    padding-top: 0;
+  }
+  .services-one__title {
+    font-size: 26px;
+    line-height: 36px;
+  }
+
+  .services-one__tabs-title {
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+
+@media (max-width: 576px) {
+  .services-one__img {
+    height: 200px;
+  }
+  .services-one__title {
+    margin-bottom: 12px;
+  }
+  .services-one__top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px 0;
+  }
+}

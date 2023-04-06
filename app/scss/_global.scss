@@ -56,6 +56,9 @@ body {
   &__services-main {
     margin-top: 70px;
   }
+  &__services-one {
+    margin-top: 120px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -80,6 +83,9 @@ body {
     margin-bottom: 60px;
   }
   .main__services-main {
+    margin-top: 80px;
+  }
+   .main__services-one {
     margin-top: 80px;
   }
 }

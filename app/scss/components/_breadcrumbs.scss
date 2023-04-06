@@ -1,5 +1,4 @@
 .breadcrumbs {
-  padding-top: 150px;
   &__list {
     display: flex;
     gap: 0 8px;
@@ -26,5 +25,14 @@
     @extend %montserrat-600;
     font-size: 14px;
     line-height: 21px;
+  }
+}
+
+@media (max-width: 490px) {
+  .breadcrumbs {
+    &__link {
+      font-size: 10px;
+      line-height: 15px;
+    }
   }
 }

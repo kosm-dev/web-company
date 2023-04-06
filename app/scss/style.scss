@@ -4,6 +4,7 @@
 @import "libs";
 @import "global";
 
+
 @import "components/buttons";
 @import "components/socials";
 @import "components/selects";
@@ -11,6 +12,7 @@
 @import "components/pagination";
 @import "components/filter";
 @import "components/breadcrumbs";
+@import "components/tabs";
 
 @import "parts/header";
 @import "parts/top";
@@ -23,4 +25,5 @@
 @import "parts/portfolio-main";
 @import "parts/portfolio-one";
 @import "parts/services-main";
+@import "parts/services-one";
 @import "parts/footer";
