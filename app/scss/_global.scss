@@ -59,6 +59,10 @@ body {
   &__services-one {
     margin-top: 120px;
   }
+  &__blog {
+    margin-top: 170px;
+    margin-bottom: 100px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -71,6 +75,10 @@ body {
   }
   .main__services-main {
     margin-top: 20px;
+  }
+  .main__blog {
+    margin-top: 150px;
+    margin-bottom: 60px;
   }
 }
 
@@ -85,8 +93,11 @@ body {
   .main__services-main {
     margin-top: 80px;
   }
-   .main__services-one {
+  .main__services-one {
     margin-top: 80px;
+  }
+  .main__blog {
+    margin-top: 120px;
   }
 }
 

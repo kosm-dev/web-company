@@ -187,15 +187,32 @@
             <h1 class="blog__title title">
               Блог
             </h1>
-            <div class="blog-search">
+            <div class="blog__search blog-search">
               <form class="blog-search__form">
-                <input class="blog-search__input" type="text">
+                <div class="blog-search__label">
+                  <button class="blog-search__btn" type="submit">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g clip-path="url(#clip0_527_1224)">
+                        <path
+                          d="M10.3239 1.86221C5.65222 1.86224 1.84111 5.67139 1.84134 10.3433C1.84132 15.015 5.65247 18.8222 10.3245 18.8219C12.3055 18.8219 14.1272 18.1321 15.5731 16.9872L20.15 21.5626C20.5407 21.9525 21.1732 21.9533 21.5631 21.5626C21.9524 21.1725 21.9525 20.5396 21.5631 20.1494L16.9843 15.5721C18.12 14.1293 18.8034 12.3152 18.8034 10.3431C18.8034 5.67136 14.9958 1.86201 10.3239 1.86221ZM10.3239 3.86093C13.9155 3.86092 16.8042 6.75158 16.8044 10.3429C16.8044 13.9344 13.9157 16.823 10.3241 16.823C6.73262 16.8231 3.84 13.9344 3.83973 10.3432C3.83975 6.75167 6.73267 3.86119 10.3239 3.86093Z"
+                          fill="#504F4F" />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_527_1224">
+                          <rect width="24" height="24" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+
+                  </button>
+                  <input class="blog-search__input" type="text" placeholder="Пошук по блогу">
+                </div>
+
+
               </form>
-              <button class="blog-search__btn" type="submit">
-                пошук
-              </button>
+
             </div>
-            <ul class="portfolio-main__list filter-list">
+            <ul class="blog__filter-list filter-list">
               <li class="filter-list__item active" data-id="all">
                 Всі
               </li>
@@ -218,44 +235,210 @@
 
             <div class="blog__items">
 
-              <a class="blog-item">
+              <a class="blog-item" href="#">
                 <div class="blog-item__img">
-                  <img src="" alt="">
-
-                  <div class="blog-item__content">
-                    <div class="blog-item__head">
-
-                      <div class="blog-item__info">
-                        <div class="blog-item__author">
-                          Lorem ipsum.
-                        </div>
-                        <div class="blog-item__date">
-                          16.10.2022
-                        </div>
-                      </div>
-
-                      <div class="blog-item__views">
-                        <div class="blog-item__icon">
-                          <img src="images/eye.svg" alt="eye">
-                          1,2 т
-                        </div>
-                      </div>
-
-                    </div>
-                    <div class="blog-item__descr">
-                      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-                      the industry's standard
-                      dummy text ever since Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                      Lorem Ipsum has been
-                      the industry's standard dummy text ever since
-                    </div>
-                  </div>
-
+                  <img src="images/blog-1.jpg" alt="blog image">
                 </div>
+
+                <div class="blog-item__content">
+                  <div class="blog-item__head">
+
+                    <div class="blog-item__info">
+                      <div class="blog-item__author">
+                        Lorem ipsum.
+                      </div>
+                      <div class="blog-item__date">
+                        16.10.2022
+                      </div>
+                    </div>
+
+                    <div class="blog-item__views">
+                      <div class="blog-item__icon">
+                        <img src="images/eye.svg" alt="eye">
+                      </div>
+                      1,2 т
+                    </div>
+
+                  </div>
+                  <div class="blog-item__descr">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                    the industry's standard
+                    dummy text ever since Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    Lorem Ipsum has been
+                    the industry's standard dummy text ever since
+                  </div>
+                </div>
+
+
+              </a>
+
+              <a class="blog-item" href="#">
+                <div class="blog-item__img">
+                  <img src="images/blog-4.jpg" alt="blog image">
+                </div>
+
+                <div class="blog-item__content">
+                  <div class="blog-item__head">
+
+                    <div class="blog-item__info">
+                      <div class="blog-item__author">
+                        Lorem ipsum.
+                      </div>
+                      <div class="blog-item__date">
+                        16.10.2022
+                      </div>
+                    </div>
+
+                    <div class="blog-item__views">
+                      <div class="blog-item__icon">
+                        <img src="images/eye.svg" alt="eye">
+                      </div>
+                      1,2 т
+                    </div>
+
+                  </div>
+                  <div class="blog-item__descr">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                    the industry's standard
+                    dummy text ever since Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    Lorem Ipsum has been
+                    the industry's standard dummy text ever since
+                  </div>
+                </div>
+
+
+              </a>
+
+
+              <a class="blog-item" href="#">
+                <div class="blog-item__img">
+                  <img src="images/blog-2.jpg" alt="blog image">
+                </div>
+
+                <div class="blog-item__content">
+                  <div class="blog-item__head">
+
+                    <div class="blog-item__info">
+                      <div class="blog-item__author">
+                        Lorem ipsum.
+                      </div>
+                      <div class="blog-item__date">
+                        16.10.2022
+                      </div>
+                    </div>
+
+                    <div class="blog-item__views">
+                      <div class="blog-item__icon">
+                        <img src="images/eye.svg" alt="eye">
+                      </div>
+                      1,2 т
+                    </div>
+
+                  </div>
+                  <div class="blog-item__descr">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                    the industry's standard
+                    dummy text ever since Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    Lorem Ipsum has been
+                    the industry's standard dummy text ever since
+                  </div>
+                </div>
+
+
+              </a>
+
+
+              <a class="blog-item" href="#">
+                <div class="blog-item__img">
+                  <img src="images/blog-3.jpg" alt="blog image">
+                </div>
+
+                <div class="blog-item__content">
+                  <div class="blog-item__head">
+
+                    <div class="blog-item__info">
+                      <div class="blog-item__author">
+                        Lorem ipsum.
+                      </div>
+                      <div class="blog-item__date">
+                        16.10.2022
+                      </div>
+                    </div>
+
+                    <div class="blog-item__views">
+                      <div class="blog-item__icon">
+                        <img src="images/eye.svg" alt="eye">
+                      </div>
+                      1,2 т
+                    </div>
+
+                  </div>
+                  <div class="blog-item__descr">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                    the industry's standard
+                    dummy text ever since Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    Lorem Ipsum has been
+                    the industry's standard dummy text ever since
+                  </div>
+                </div>
+
 
               </a>
 
             </div>
+
+            <div class="blog__links">
+              <a class="blog__link link-more" href="#">
+                Показати ще
+              </a>
+            </div>
+
+            <div class="blog__pagination pagination">
+              <a class="pagination__prev pagination__arrows" href="#">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M6.66652 10C6.66588 9.89037 6.68691 9.78171 6.72838 9.68012C6.76985 9.57862 6.83095 9.48629 6.90818 9.40837L11.9082 4.4084C12.0651 4.25149 12.2779 4.16333 12.4998 4.16333C12.7218 4.16333 12.9346 4.25149 13.0915 4.4084C13.2484 4.56533 13.3366 4.77815 13.3366 5.00007C13.3366 5.22199 13.2484 5.43482 13.0915 5.59174L8.67484 10L13.0832 14.4084C13.2197 14.5678 13.291 14.7729 13.2829 14.9826C13.2748 15.1924 13.1879 15.3913 13.0395 15.5397C12.8911 15.6881 12.6921 15.775 12.4824 15.7832C12.2727 15.7913 12.0676 15.72 11.9082 15.5834L6.90818 10.5834C6.75423 10.4282 6.66744 10.2187 6.66652 10Z"
+                    fill="#6F6F6F" />
+                </svg>
+
+              </a>
+              <ul class="pagination__list">
+                <li class="pagination__item">
+                  <a class="pagination__link" href="#">
+                    1
+                  </a>
+                </li>
+                <li class="pagination__item">
+                  <a class="pagination__link" href="#">
+                    2
+                  </a>
+                </li>
+                <li class="pagination__item">
+                  <a class="pagination__link pagination__link--active" href="#">
+                    3
+                  </a>
+                </li>
+                <li class="pagination__item">
+                  <a class="pagination__link" href="#">
+                    ...
+                  </a>
+                </li>
+                <li class="pagination__item">
+                  <a class="pagination__link" href="#">
+                    10
+                  </a>
+                </li>
+              </ul>
+              <a class="pagination__next pagination__arrows" href="#">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M13.3334 10.0001C13.334 10.1097 13.313 10.2184 13.2716 10.32C13.2301 10.4215 13.169 10.5138 13.0918 10.5917L8.09175 15.5917C7.93482 15.7486 7.722 15.8368 7.50008 15.8368C7.27815 15.8368 7.06533 15.7486 6.90841 15.5917C6.75149 15.4348 6.66333 15.222 6.66333 15.0001C6.66333 14.7781 6.75149 14.5653 6.90841 14.4084L11.3251 10.0001L6.91675 5.59169C6.78022 5.43227 6.70888 5.22721 6.71698 5.01748C6.72508 4.80775 6.81203 4.6088 6.96044 4.46039C7.10886 4.31197 7.3078 4.22503 7.51753 4.21693C7.72726 4.20883 7.93232 4.28016 8.09174 4.41669L13.0918 9.41672C13.2457 9.57189 13.3325 9.78139 13.3334 10.0001Z"
+                    fill="#6F6F6F" />
+                </svg>
+
+              </a>
+            </div>
+
           </div>
       </section>
 
