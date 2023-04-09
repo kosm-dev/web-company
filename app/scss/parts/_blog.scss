@@ -75,25 +75,25 @@
   }
   &__head {
     margin-bottom: 16px;
-    align-items: center;
-    display: flex;
-    justify-content: space-between;
   }
+}
+
+.blog-head {
+  display: flex;
+  justify-content: space-between;
   &__info {
     display: flex;
     align-items: center;
     font-size: 14px;
     line-height: 21px;
-    @extend %montserrat-400;
     gap: 12px;
   }
   &__author {
-    @extend %montserrat-600;
     padding: 8px 18px;
     background: #ffa26f;
     border-radius: 8px;
     min-height: 37px;
-    color: #ffffff;
+    color: #fff;
   }
   &__date {
     color: #504f4f;
@@ -104,13 +104,6 @@
     align-items: center;
     font-size: 14px;
     line-height: 21px;
-    @extend %montserrat-400;
-    color: #504f4f;
-  }
-  &__descr {
-    @extend %montserrat-500;
-    font-size: 16px;
-    line-height: 24px;
     color: #504f4f;
   }
 }
@@ -154,25 +147,24 @@
   }
   .blog__links {
     margin-bottom: 16px;
-    
   }
-  .blog-item__info {
+  .blog-head__info {
     font-size: 10px;
     line-height: 15px;
   }
-  .blog-item__author {
+  .blog-head__author {
     padding: 8px 18px;
     min-height: 31px;
   }
-  .blog-item__views {
+  .blog-head__views {
     font-size: 10px;
     line-height: 15px;
   }
-  .blog-item__icon img {
+  .blog-head__icon img {
     width: 16px;
     height: 16px;
   }
-  .blog-item__descr {
+  .blog-head__descr {
     font-size: 14px;
     line-height: 21px;
   }
