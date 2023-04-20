@@ -71,6 +71,9 @@ body {
     margin-top: 120px;
     margin-bottom: 100px;
   }
+  &__contacts-page {
+    margin-top: 70px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -81,7 +84,7 @@ body {
   .main__portfolio-main {
     margin-top: 130px;
   }
-  
+
   .main__services-main {
     margin-top: 20px;
   }

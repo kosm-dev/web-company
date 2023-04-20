@@ -1,0 +1,32 @@
+.page-404 {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  &__inner {
+    width: 100%;
+    max-width: 729px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__title {
+    margin-bottom: 24px;
+    @extend %montserrat-600;
+    font-size: 198px;
+    line-height: 100%;
+    letter-spacing: 0.04em;
+    color: $accent;
+  }
+  &__content {
+    margin-bottom: 40px;
+    color: #504f4f;
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .page-404__title{
+    font-size: 100px; 
+  }
+}
