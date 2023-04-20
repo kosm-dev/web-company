@@ -1,4 +1,5 @@
 "use strict";
+
 document.addEventListener("DOMContentLoaded", () => {
 
 
@@ -9,7 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const select = dropdown.querySelector('.select'),
       caret = dropdown.querySelector('.caret'),
       menu = dropdown.querySelector('.menu'),
-      options = dropdown.querySelectorAll('.menu li'),
+      options = dropdown.querySelectorAll('.menu a'),
       selected = dropdown.querySelector('.selected');
 
     select.addEventListener('click', () => {
@@ -114,110 +115,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
   });
 
-
-
-
-
-  // tabs
-
-  const tabs = document.querySelectorAll('.tabs__head-item'),
-    tabsContent = document.querySelectorAll('.tabs__content-item'),
-    tabsParent = document.querySelector('.tabs__head');
-  // Нужно скрыть все ненужные нам табы
-  function hideTabContent() {
-    tabsContent.forEach(item => {
-      item.classList.add('hide');
-      item.classList.remove('show');
-    });
-
-    tabs.forEach(tab => {
-      tab.classList.remove('tabs__head-item--active');
-    });
-  }
-
-  function showTabContent(i = 0) {
-    tabsContent[i].classList.add('show', 'fade');
-    tabsContent[i].classList.remove('hide');
-    tabs[i].classList.add('tabs__head-item--active');
-  }
-
-  hideTabContent();
-  showTabContent();
-
-  tabsParent.addEventListener('click', (event) => {
-    const target = event.target;
-
-    if (target && target.classList.contains('tabs__head-item')) {
-      tabs.forEach((item, i) => {
-        if (target == item) {
-          hideTabContent();
-          showTabContent(i);
-        }
-      });
-    }
-  });
-
-
-
   // filter
 
-  const filterList = document.querySelector('.filter-list'),
-    items = document.querySelectorAll('.filter-list__block'),
-    filterListItems = document.querySelectorAll('.filter-list__item');
 
-  function filter() {
-
-    filterList.addEventListener('click', (event) => {
-      const targetId = event.target.dataset.id;
-
-      const target = event.target;
-
-      if (target.classList.contains('filter-list__item')) {
-        filterListItems.forEach(listItem => {
-          listItem.classList.remove('active');
-
-        });
-      }
-      target.classList.add('active');
-
-      switch (targetId) {
-        case 'all':
-          getItems('filter-list__block');
-          break;
-        case 'shop':
-          getItems(targetId);
-          break;
-
-        case 'landing':
-          getItems(targetId);
-          break;
-
-        case 'business':
-          getItems(targetId);
-          break;
-
-        case 'design':
-          getItems(targetId);
-          break;
-        case 'other':
-          getItems(targetId);
-          break;
-      }
-    });
-  }
-
-  filter();
-
-  function getItems(className) {
-    items.forEach(item => {
-      if (item.classList.contains(className)) {
-        item.style.display = 'flex';
-      } else {
-        item.style.display = 'none';
-      }
-    });
-  }
-
+  
 
 
 
