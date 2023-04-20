@@ -53,6 +53,10 @@ body {
     margin-top: 170px;
     margin-bottom: 100px;
   }
+  &__portfolio-one {
+    margin-top: 120px;
+    margin-bottom: 100px;
+  }
   &__services-main {
     margin-top: 70px;
   }
@@ -63,10 +67,10 @@ body {
     margin-top: 170px;
     margin-bottom: 100px;
   }
-   &__blog-one {
+  &__blog-one {
     margin-top: 120px;
     margin-bottom: 100px;
-   }
+  }
 }
 
 @media (max-width: 768px) {
@@ -77,6 +81,7 @@ body {
   .main__portfolio-main {
     margin-top: 130px;
   }
+  
   .main__services-main {
     margin-top: 20px;
   }
@@ -84,7 +89,6 @@ body {
     margin-top: 150px;
     margin-bottom: 60px;
   }
-  
 }
 
 @media (max-width: 576px) {
@@ -96,6 +100,9 @@ body {
     margin-bottom: 60px;
   }
   .main__services-main {
+    margin-top: 80px;
+  }
+  .main__portfolio-one {
     margin-top: 80px;
   }
   .main__services-one {
@@ -142,7 +149,3 @@ body {
     opacity: 1;
   }
 }
-
-
-
-

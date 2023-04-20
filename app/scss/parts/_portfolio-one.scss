@@ -1,38 +1,230 @@
-.main {
-  &__portfolio-one {
-    padding-top: 200px;
-  }
-}
 .portfolio-one {
   &__breadcrumbs {
+    margin-bottom: 50px;
   }
   &__inner {
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: space-between;
   }
   &__top {
+    padding-right: 30px;
+    width: 100%;
+    max-width: 746px;
   }
   &__top-title {
+    margin-bottom: 20px;
   }
   &__top-text {
+    margin-bottom: 32px;
+    @extend %montserrat-500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #504f4f;
   }
-  &__top-links {
+
+  ul.portfolio-one__status {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px 0px;
+    padding: 60px 70px;
+    width: 100%;
+    max-width: 421px;
+    background: $gray-2;
+    border-radius: 16px;
+    font-size: 16px;
+    line-height: 24px;
   }
-  &__top-link {
+  &__status-box {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
   }
-  &__status {
+  &__status li {
+    display: flex;
+    position: relative;
+    padding-left: 16px;
+  }
+  &__status li:after {
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: 0;
+    width: 6px;
+    height: 6px;
+    background-color: $accent-2;
+    border-radius: 50%;
+  }
+  &__status span {
+    padding-right: 10px;
+    margin-right: auto;
+    @extend %montserrat-600;
+    color: #000000;
+  }
+  &__status p {
+    @extend %montserrat-500;
+    color: #504f4f;
   }
   &__big-img {
+    margin-left: -15px;
+    margin-right: -15px;
+    margin-bottom: 100px;
+  }
+  &__big-img img {
+    object-fit: cover;
   }
   &__items {
+    display: flex;
+    flex-direction: column;
+    gap: 100px 0;
   }
   &__item {
-  }
-  &__item-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 0 30px;
   }
   &__item-title {
+    margin-bottom: 20px;
+    @extend %montserrat-600;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
   }
   &__item-text {
+    width: 100%;
+    max-width: 656px;
+    @extend %montserrat-500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #504f4f;
   }
   &__item-img {
+    width: 100%;
+    max-width: 516px;
+    height: 320px;
+    border: 6px solid #000000;
+    border-radius: 12px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  &__item--two {
+    .portfolio-one__item-img {
+      order: -1;
+    }
+  }
+  &__item--three {
+    .portfolio-one__item-img {
+      width: 100%;
+      max-width: 680px;
+      height: 520px;
+    }
+  }
+  &__item-list {
+    display: flex;
+    flex-direction: column;
+    gap: 24px 0;
+    font-size: 16px;
+    line-height: 24px;
+    @extend %montserrat-500;
+  }
+  &__item-list-box {
+    display: flex;
+  }
+  &__item-list-box span {
+    padding-right: 72px;
+
+    color: #000000;
+  }
+  &__item-list-box li {
+    max-width: 430px;
+    width: 100%;
+    color: #504f4f;
   }
 }
 
+@media (max-width: 1000px) {
+  .portfolio-one__inner {
+    flex-direction: column;
+  }
+  .portfolio-one__top {
+    padding-right: 0;
+    max-width: none;
+  }
+  .portfolio-one__item {
+    flex-direction: column;
+    align-items: center;
+  }
+  .portfolio-one__item--two .portfolio-one__item-img {
+    order: 1;
+  }
+  .portfolio-one__item--three .portfolio-one__item-content {
+    align-self: flex-start;
+  }
+  ul.portfolio-one__item-list {
+    margin-bottom: 20px;
+  }
+  .portfolio-one__item-list-box li {
+    max-width: none;
+  }
+  .portfolio-one__item-text {
+    max-width: none;
+    margin-bottom: 20px;
+  }
+
+  .portfolio-one__item-list-box span {
+    padding-right: 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .portfolio-one__breadcrumbs {
+    margin-bottom: 37px;
+  }
+  .portfolio-one__top-title {
+    text-align: center;
+    margin-bottom: 25px;
+  }
+  .portfolio-one ul.portfolio-one__status {
+    max-width: none;
+    padding: 30px;
+  }
+}
+
+@media (max-width: 576px) {
+  .portfolio-one__inner {
+    margin-bottom: 40px;
+  }
+  .portfolio-one__big-img {
+    margin-bottom: 60px;
+  }
+  .portfolio-one__items {
+    gap: 60px 0;
+  }
+  .portfolio-one__item-title {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .portfolio-one__item-text {
+    width: 100%;
+    max-width: 656px;
+    font-size: 14px;
+    line-height: 21px;
+    color: #504f4f;
+  }
+  .portfolio-one__item--three .portfolio-one__item-img {
+    height: 320px;
+  }
+  .portfolio-one__item-list {
+    font-size: 14px;
+    line-height: 21px;
+  }
+}
+
+@media (max-width: 440px) {
+  .portfolio-one__item-img {
+    max-width: none;
+    height: 177px;
+  }
+}
